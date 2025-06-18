@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import Hello from './Components/Functional_comp';
+import Hi from './Components/Class_comp';
 import './App.css';
+import Wellcome from './Components/JSX';
+import Fullname from './Components/Props';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <h1>Hello React Family</h1> */}
+      {/* <Hello></Hello> // We can also write <Hello/>
+      <Hi></Hi> // We can also write <Hi/> */}
+
+      {/* <Wellcome /> */}
+
+      <Fullname name="Ibsa" age="20"> 
+        <p>This is the second child.</p>
+        <button>Click me</button>
+      </Fullname>
+      <Fullname name="Nafrom" age="23">
+        <p>This is the first child.</p>
+      </Fullname>
+      <Fullname name="Segni" age="14">
+        <p>This is the third child.</p>
+      </Fullname>
     </div>
   );
 }
