@@ -6,6 +6,7 @@ class LinkedIn extends Component {
     
       this.state = {
          channel: "Connect to my LinkedIn",
+         isClicked: false,
       }
     }
     
@@ -13,13 +14,17 @@ class LinkedIn extends Component {
     mergeText(){
         this.setState({
             channel: "Thank you for connecting",
+            isClicked: true,
         });
     }
   render() {
     return (
       <div>
         <h1>{this.state.channel}</h1>
-        <button onClick={() => this.mergeText()}>CONNECT</button>
+        {!this.state.isClicked && <p>@ibsa_a1</p>}
+        {!this.state.isClicked && (
+            <button onClick={() => this.mergeText()}>CONNECT</button>
+        )}
       </div>
     );
   }
