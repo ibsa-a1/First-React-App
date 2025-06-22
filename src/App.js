@@ -3,6 +3,7 @@ import Hi from './Components/Class_comp';
 import './App.css';
 import Wellcome from './Components/JSX';
 import Fullname from './Components/Props';
+import LinkedIn from './Components/states';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
 
       {/* <Wellcome /> */}
 
-      <Fullname name="Ibsa" age="20"> 
+      {/* <Fullname name="Ibsa" age="20"> 
         <p>This is the second child.</p>
         <button>Click me</button>
       </Fullname>
@@ -22,7 +23,10 @@ function App() {
       </Fullname>
       <Fullname name="Segni" age="14">
         <p>This is the third child.</p>
-      </Fullname>
+      </Fullname> */}
+
+
+      <LinkedIn />
     </div>
   );
 }
