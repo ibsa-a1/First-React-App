@@ -4,6 +4,7 @@ import './App.css';
 import Wellcome from './Components/JSX';
 import Fullname from './Components/Props';
 import LinkedIn from './Components/states';
+import Event_func from './Components/Event_on_func';
 
 function App() {
   return (
@@ -26,7 +27,11 @@ function App() {
       </Fullname> */}
 
 
-      <LinkedIn />
+      {/* <LinkedIn /> */}
+
+
+
+      <Event_func />
     </div>
   );
 }
