@@ -5,6 +5,7 @@ import Wellcome from './Components/JSX';
 import Fullname from './Components/Props';
 import LinkedIn from './Components/states';
 import Event_func from './Components/Event_on_func';
+import Event_on_class from './Components/Event_on_class';
 
 function App() {
   return (
@@ -31,7 +32,10 @@ function App() {
 
 
 
-      <Event_func />
+      {/* <Event_func /> */}
+
+
+      <Event_on_class />
     </div>
   );
 }
