@@ -7,6 +7,7 @@ import LinkedIn from './Components/states';
 import Event_func from './Components/Event_on_func';
 import Event_on_class from './Components/Event_on_class';
 import Event_Bind from './Components/Event_Bind';
+import ConditionalRender from './Components/conditionalRENDER';
 
 function App() {
   return (
@@ -38,7 +39,9 @@ function App() {
 
       {/* <Event_on_class /> */}
 
-      <Event_Bind />
+      {/* <Event_Bind /> */}
+
+      <ConditionalRender />
     </div>
   );
 }
