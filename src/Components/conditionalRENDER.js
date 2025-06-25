@@ -1,6 +1,22 @@
 import React, { Component } from 'react'
 
-class ConditionalRender extends Component {
+
+function TrafficLight({ color }) {
+  if (color == 'red') {
+    return <p style={{ color: 'red' }}>Stop!</p>;
+  } else if (color == 'yellow') {
+    return <p style={{ color: 'orange' }}>Prepare to stop.</p>;
+  } else if (color == 'green') {
+    return <p style={{ color: 'green' }}>Go!</p>;
+  } else {
+    return <p>Invalid light color.</p>;
+  }
+}
+
+export default TrafficLight
+
+{/*
+    class ConditionalRender extends Component {
 
     constructor() {
       super()
@@ -43,3 +59,4 @@ class ConditionalRender extends Component {
 }
 
 export default ConditionalRender
+*/}

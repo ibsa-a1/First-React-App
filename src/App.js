@@ -8,6 +8,7 @@ import Event_func from './Components/Event_on_func';
 import Event_on_class from './Components/Event_on_class';
 import Event_Bind from './Components/Event_Bind';
 import ConditionalRender from './Components/conditionalRENDER';
+import TrafficLight from './Components/conditionalRENDER';
 
 function App() {
   return (
@@ -41,7 +42,17 @@ function App() {
 
       {/* <Event_Bind /> */}
 
-      <ConditionalRender />
+      {/* <ConditionalRender /> */}
+
+
+      <div>
+      <TrafficLight color="red" />
+      <TrafficLight color="yellow" />
+      <TrafficLight color="green" />
+      <TrafficLight color="blue" /> {/* This will show "Invalid light color." */}
+    </div>
+
+
     </div>
   );
 }
