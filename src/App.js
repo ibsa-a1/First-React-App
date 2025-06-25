@@ -9,6 +9,7 @@ import Event_on_class from './Components/Event_on_class';
 import Event_Bind from './Components/Event_Bind';
 import ConditionalRender from './Components/conditionalRENDER';
 import TrafficLight from './Components/conditionalRENDER';
+import Programming from './Components/lists';
 
 function App() {
   return (
@@ -45,12 +46,14 @@ function App() {
       {/* <ConditionalRender /> */}
 
 
-      <div>
+      {/* <div>
       <TrafficLight color="red" />
       <TrafficLight color="yellow" />
       <TrafficLight color="green" />
-      <TrafficLight color="blue" /> {/* This will show "Invalid light color." */}
-    </div>
+      <TrafficLight color="blue" /> 
+    </div> */}
+
+    <Programming />
 
 
     </div>
