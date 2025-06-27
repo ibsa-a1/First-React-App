@@ -15,6 +15,10 @@ import Inline from './Components/Inline';
 import './Appstyle.css';
 import styles from './Appstyle.module.css';
 import Form from './Components/Form';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Pages/Home'
+import Contact from './Pages/Contact'
+import About from './Pages/About'
 
 function App() {
   return (
@@ -70,7 +74,16 @@ function App() {
     but, we can't apply the above CSS module for separate file components. */}
 
 
-      <Form />
+      {/* <Form /> */}
+
+      <Router>
+        <Routes>
+          <Route path = "/" element = {<Home />}/>
+          <Route path = "/Contact" element = {<Contact />}/>
+          <Route path = "/About" element = {<About />}/>
+          <Route path = "*" element = {<h1>Page Not Found</h1>}/>
+        </Routes>
+      </Router>
 
     </div>
   );
