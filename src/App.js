@@ -11,6 +11,7 @@ import ConditionalRender from './Components/conditionalRENDER';
 import TrafficLight from './Components/conditionalRENDER';
 import Programming from './Components/lists';
 import Styles from './Components/style';
+import Inline from './Components/Inline';
 
 function App() {
   return (
@@ -56,7 +57,9 @@ function App() {
 
     {/* <Programming /> */}
     
-    <Styles heading = {true} />
+    {/* <Styles heading = {true} /> */}
+
+    <Inline />
 
 
     </div>
