@@ -14,6 +14,7 @@ import Styles from './Components/style';
 import Inline from './Components/Inline';
 import './Appstyle.css';
 import styles from './Appstyle.module.css';
+import Form from './Components/Form';
 
 function App() {
   return (
@@ -63,12 +64,13 @@ function App() {
 
     {/* <Inline /> */}
 
-    <h1 className="regularcss">Regular CSS</h1>
-    <h1 className={styles.modulecss}>Modular CSS</h1>
+    {/* <h1 className="regularcss">Regular CSS</h1>
+    <h1 className={styles.modulecss}>Modular CSS</h1> */}
     {/* Here we can apply the css inside ./components/Inline.css here globally
     but, we can't apply the above CSS module for separate file components. */}
 
 
+      <Form />
 
     </div>
   );
