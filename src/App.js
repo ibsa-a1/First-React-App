@@ -15,7 +15,7 @@ import Inline from './Components/Inline';
 import './Appstyle.css';
 import styles from './Appstyle.module.css';
 import Form from './Components/Form';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './Pages/Home'
 import Contact from './Pages/Contact'
 import About from './Pages/About'
@@ -77,6 +77,11 @@ function App() {
       {/* <Form /> */}
 
       <Router>
+        <nav>
+          <Link to = "/">Home</Link>
+          <Link to = "/Contact">Contact</Link>
+          <Link to = "/About">About</Link>
+        </nav>
         <Routes>
           <Route path = "/" element = {<Home />}/>
           <Route path = "/Contact" element = {<Contact />}/>
@@ -84,6 +89,10 @@ function App() {
           <Route path = "*" element = {<h1>Page Not Found</h1>}/>
         </Routes>
       </Router>
+      {/* 1. BrowserRouter – Wraps your app and enables routing functionality using the browser’s URL.
+          2. Routes – A container that holds all your individual route definitions.
+          3. Route – Defines a specific path and what component to render when that path is visited.
+          4. Link – Replaces <a> tags to navigate without reloading the page. */}
 
     </div>
   );
