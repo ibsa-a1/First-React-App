@@ -10,6 +10,7 @@ import Event_Bind from './Components/Event_Bind';
 import ConditionalRender from './Components/conditionalRENDER';
 import TrafficLight from './Components/conditionalRENDER';
 import Programming from './Components/lists';
+import Styles from './Components/style';
 
 function App() {
   return (
@@ -53,7 +54,9 @@ function App() {
       <TrafficLight color="blue" /> 
     </div> */}
 
-    <Programming />
+    {/* <Programming /> */}
+    
+    <Styles heading = {true} />
 
 
     </div>
