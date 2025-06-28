@@ -19,6 +19,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './Pages/Home'
 import Contact from './Pages/Contact'
 import About from './Pages/About'
+import UseStateCounter from './Hooks/useStateCounter';
 
 function App() {
   return (
@@ -76,7 +77,7 @@ function App() {
 
       {/* <Form /> */}
 
-      <Router>
+      {/* <Router>
         <nav>
           <Link to = "/">Home</Link>
           <Link to = "/Contact">Contact</Link>
@@ -88,11 +89,15 @@ function App() {
           <Route path = "/About" element = {<About />}/>
           <Route path = "*" element = {<h1>Page Not Found</h1>}/>
         </Routes>
-      </Router>
+      </Router> */}
       {/* 1. BrowserRouter – Wraps your app and enables routing functionality using the browser’s URL.
           2. Routes – A container that holds all your individual route definitions.
           3. Route – Defines a specific path and what component to render when that path is visited.
           4. Link – Replaces <a> tags to navigate without reloading the page. */}
+
+
+
+        <UseStateCounter />
 
     </div>
   );
