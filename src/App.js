@@ -20,6 +20,7 @@ import Home from './Pages/Home'
 import Contact from './Pages/Contact'
 import About from './Pages/About'
 import UseStateCounter from './Hooks/useStateCounter';
+import UseStatewithObject from './Hooks/useStatewithObject';
 
 function App() {
   return (
@@ -97,7 +98,9 @@ function App() {
 
 
 
-        <UseStateCounter />
+        {/* <UseStateCounter /> */}
+
+        <UseStatewithObject />
 
     </div>
   );
