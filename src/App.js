@@ -21,6 +21,7 @@ import Contact from './Pages/Contact'
 import About from './Pages/About'
 import UseStateCounter from './Hooks/useStateCounter';
 import UseStatewithObject from './Hooks/useStatewithObject';
+import RegisterForm from './Hooks/useStateForm';
 
 function App() {
   return (
@@ -100,7 +101,9 @@ function App() {
 
         {/* <UseStateCounter /> */}
 
-        <UseStatewithObject />
+        {/* <UseStatewithObject /> */}
+
+        <RegisterForm />
 
     </div>
   );
