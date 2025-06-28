@@ -2,6 +2,10 @@ import React, { useState } from 'react'
 
 function UseStatewithObject() {
     const [name, setName] = useState ({firstName: '', lastName: ''})
+
+    function resetText(e){
+        setName({firstName: '', lastName: ''})
+    }
   return (
     <div>
       <form>
@@ -13,6 +17,7 @@ function UseStatewithObject() {
         the name.firstName and name.lastName. If we don't use the spread operator, when we input the first operator, the second will 
         disappear and if we input the second operator, the first will disappear. */}
         <h2>{name.firstName} {name.lastName}</h2>
+        <button onClick={resetText}>Reset</button>
       </form>
     </div>
   )
