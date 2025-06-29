@@ -22,6 +22,7 @@ import About from './Pages/About'
 import UseStateCounter from './Hooks/useStateCounter';
 import UseStatewithObject from './Hooks/useStatewithObject';
 import RegisterForm from './Hooks/useStateForm';
+import Main from './Components/PropsDrilling';
 
 function App() {
   return (
@@ -103,7 +104,9 @@ function App() {
 
         {/* <UseStatewithObject /> */}
 
-        <RegisterForm />
+        {/* <RegisterForm /> */}
+
+        <Main  msg="I passed through the Header and the Wrapper and I reached the Button component"  />
 
     </div>
   );
