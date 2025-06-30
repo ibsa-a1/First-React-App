@@ -26,17 +26,18 @@ import Main from './Components/PropsDrilling';
 import Fruits from './Components/Fruits';
 import FruitsCounter from './Components/FruitsCounter';
 import { useState } from 'react';
+import UseEffectHooks from './Hooks/UseEffectHooks';
 
 function App() {
 
-  const [fruits] = useState([
-    {fruitName: 'apple', id: 1},
-    {fruitName: 'banana', id: 2},
-    {fruitName: 'plum', id: 3},
-    {fruitName: 'orange', id: 4},
-    {fruitName: 'mango', id: 5},
-    {fruitName: 'grapes', id: 6},
-  ]);
+  // const [fruits] = useState([
+  //   {fruitName: 'apple', id: 1},
+  //   {fruitName: 'banana', id: 2},
+  //   {fruitName: 'plum', id: 3},
+  //   {fruitName: 'orange', id: 4},
+  //   {fruitName: 'mango', id: 5},
+  //   {fruitName: 'grapes', id: 6},
+  // ]);
 
   return (
     <div className="App">
@@ -121,10 +122,12 @@ function App() {
 
         {/* <Main  msg="I passed through the Header and the Wrapper and I reached the Button component"  /> */}
 
-       
+{/*        
         <h1>Which fruit should I eat?</h1>
         <Fruits fruits={fruits} />
-        <FruitsCounter fruits={fruits} />
+        <FruitsCounter fruits={fruits} /> */}
+
+        <UseEffectHooks />
        
     </div>
   );
