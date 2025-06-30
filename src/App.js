@@ -27,6 +27,8 @@ import Fruits from './Components/Fruits';
 import FruitsCounter from './Components/FruitsCounter';
 import { useState } from 'react';
 import UseEffectHooks from './Hooks/UseEffectHooks';
+import DataFetch from './Hooks/DataFetch';
+
 
 function App() {
 
@@ -127,8 +129,9 @@ function App() {
         <Fruits fruits={fruits} />
         <FruitsCounter fruits={fruits} /> */}
 
-        <UseEffectHooks />
-       
+        {/* <UseEffectHooks /> */}
+
+        <DataFetch />       
     </div>
   );
 }
