@@ -28,6 +28,7 @@ import FruitsCounter from './Components/FruitsCounter';
 import { useState } from 'react';
 import UseEffectHooks from './Hooks/UseEffectHooks';
 import DataFetch from './Hooks/DataFetch';
+import GithubRepos from './Hooks/GithubRepos';
 
 
 function App() {
@@ -131,7 +132,9 @@ function App() {
 
         {/* <UseEffectHooks /> */}
 
-        <DataFetch />       
+        {/* <DataFetch /> */}
+
+        <GithubRepos />
     </div>
   );
 }
