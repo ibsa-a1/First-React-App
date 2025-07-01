@@ -1,3 +1,4 @@
+import React from 'react';
 import Hello from './Components/Functional_comp';
 import Hi from './Components/Class_comp';
 import './App.css';
@@ -29,7 +30,12 @@ import { useState } from 'react';
 import UseEffectHooks from './Hooks/UseEffectHooks';
 import DataFetch from './Hooks/DataFetch';
 import GithubRepos from './Hooks/GithubRepos';
+import UseContextHooks from './Hooks/UseContextHooks';
+// import {createContext} from 'react';
 
+export const OwnerContext = React.createContext();
+// This is Step 1 in Using useContext. --- Create Context
+export const ChannelContext = React.createContext();
 
 function App() {
 
@@ -134,9 +140,18 @@ function App() {
 
         {/* <DataFetch /> */}
 
-        <GithubRepos />
+        {/* <GithubRepos /> */}
+
+        <OwnerContext.Provider value={'Ibsa'}>
+          <ChannelContext.Provider value={'Abera'}>
+            <UseContextHooks />
+          </ChannelContext.Provider>
+        </OwnerContext.Provider>
+        {/* This is Step 2 in Using useContext. --- Provide Context / Value */}
+
     </div>
   );
 }
 
 export default App;
+
