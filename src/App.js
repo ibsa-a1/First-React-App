@@ -33,6 +33,7 @@ import GithubRepos from './Hooks/GithubRepos';
 import UseContextHooks from './Hooks/UseContextHooks';
 import InputFocusWithUseRef from './Hooks/InputFocus-with-useRef';
 import TimerWithRef from './Hooks/TimerWithRef';
+import UseReducer from './Hooks/UseReducer';
 // import {createContext} from 'react';
 
 export const OwnerContext = React.createContext();
@@ -153,7 +154,9 @@ function App() {
 
         {/* <InputFocusWithUseRef /> */}
 
-        <TimerWithRef />
+        {/* <TimerWithRef /> */}
+
+        <UseReducer />
 
     </div>
   );
