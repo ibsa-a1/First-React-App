@@ -31,6 +31,7 @@ import UseEffectHooks from './Hooks/UseEffectHooks';
 import DataFetch from './Hooks/DataFetch';
 import GithubRepos from './Hooks/GithubRepos';
 import UseContextHooks from './Hooks/UseContextHooks';
+import InputFocusWithUseRef from './Hooks/InputFocus-with-useRef';
 // import {createContext} from 'react';
 
 export const OwnerContext = React.createContext();
@@ -142,12 +143,14 @@ function App() {
 
         {/* <GithubRepos /> */}
 
-        <OwnerContext.Provider value={'Ibsa'}>
+        {/* <OwnerContext.Provider value={'Ibsa'}>
           <ChannelContext.Provider value={'Abera'}>
             <UseContextHooks />
           </ChannelContext.Provider>
-        </OwnerContext.Provider>
+        </OwnerContext.Provider> */}
         {/* This is Step 2 in Using useContext. --- Provide Context / Value */}
+
+        <InputFocusWithUseRef />
 
     </div>
   );
