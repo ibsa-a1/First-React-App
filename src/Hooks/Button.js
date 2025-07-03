@@ -9,4 +9,4 @@ function Button({handleClick, children}) {
   )
 }
 
-export default Button
+export default React.memo(Button) //This method will reduce somehow the rendering of the components.Button
