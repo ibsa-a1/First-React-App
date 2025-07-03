@@ -32,6 +32,7 @@ import DataFetch from './Hooks/DataFetch';
 import GithubRepos from './Hooks/GithubRepos';
 import UseContextHooks from './Hooks/UseContextHooks';
 import InputFocusWithUseRef from './Hooks/InputFocus-with-useRef';
+import TimerWithRef from './Hooks/TimerWithRef';
 // import {createContext} from 'react';
 
 export const OwnerContext = React.createContext();
@@ -150,7 +151,9 @@ function App() {
         </OwnerContext.Provider> */}
         {/* This is Step 2 in Using useContext. --- Provide Context / Value */}
 
-        <InputFocusWithUseRef />
+        {/* <InputFocusWithUseRef /> */}
+
+        <TimerWithRef />
 
     </div>
   );
