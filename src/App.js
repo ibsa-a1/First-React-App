@@ -35,6 +35,7 @@ import InputFocusWithUseRef from './Hooks/InputFocus-with-useRef';
 import TimerWithRef from './Hooks/TimerWithRef';
 import UseReducer from './Hooks/UseReducer';
 import UseCallback from './Hooks/UseCallback';
+import UseMemo from './Hooks/UseMemo';
 // import {createContext} from 'react';
 
 export const OwnerContext = React.createContext();
@@ -159,7 +160,9 @@ function App() {
 
         {/* <UseReducer /> */}
 
-        <UseCallback />
+        {/* <UseCallback /> */}
+
+        <UseMemo />
 
     </div>
   );
